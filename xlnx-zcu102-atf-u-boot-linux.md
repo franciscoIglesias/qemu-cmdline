@@ -1,7 +1,7 @@
 # xlnx-zcu102 atf u-boot linux launch example
 
 ```
-$ qemu-system-aarch64 -M xlnx-zcu102,secure=on,virtualization=on -m 4G -serial stdio -display none -device loader,file=u-boot.elf -kernel bl31.elf -device loader,addr=0x40000000,file=Image -device loader,addr=0x2000000,file=system.dtb
+$ qemu-system-aarch64 -M xlnx-zcu102,secure=on,virtualization=on -m 4G -serial stdio -display none -device loader,file=u-boot.elf -kernel bl31.elf -device loader,addr=0x40000000,file=Image -device loader,addr=0x2000000,file=zcu102.dtb
 pulseaudio: set_sink_input_volume() failed
 pulseaudio: Reason: Invalid argument
 pulseaudio: set_sink_input_mute() failed
